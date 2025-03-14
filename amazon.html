@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>amazon Project</title>
+
+  <!-- Load a font called Roboto from Google Fonts. -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="./styles/shared/general.css">
+  <link rel="stylesheet" href="./styles/shared/amazon-header.css">
+  <link rel="stylesheet" href="./styles/pages/amazon.css">
+</head>
+<body>
+  <div class="amazon-header">
+    <div class="amazon-header-left-section">
+      <a href="#" class="header-link">
+        <img src="./images/amazon-logo-white.png" alt="#" class="amazon-logo">
+        <img src="./images/amazon-mobile-logo-white.png" alt="#" class="amazon-mobile-logo">
+      </a>
+    </div>
+
+    <div class="amazon-header-middle-section">
+      <input type="text" placeholder="search" class="search-bar">
+
+      <button class="search-button">
+        <img src="./images/icons/search-icon.png" alt="#" class="search-icon">
+      </button>
+    </div>
+
+    <div class="amazon-header-right-section js-right-sec">
+      <a href="./orders.html" class="orders-link header-link" >
+        <span class="returns-text">Returns</span>
+        <span class="orders-text">&Orders</span>
+      </a>
+
+      <a href="./checkout.html" class="cart-link header-link">
+        <img src="./images/icons/cart-icon.png" alt="cart" class="cart-icon">
+
+        <div class="cart-quantity js-cart-quantity"></div>
+        <div class="cart-text">cart</div>
+      </a>
+    </div>
+
+    <div class="hamburger-menu">
+      <a href="#" class="js-dash">
+        <img src="./images/icons/hamburger-menu.png" alt="#" class="hamburger-logo">
+      </a>
+      <button class="x-logo js-x-logo js-hide">&#9747</button>
+    </div>
+  </div>
+
+  <div class="main">
+    <div class="products-grid js-products-grid">
+      <!-- <div class="product-container">
+        <div class="product-image-container">
+          <img class="product-image" src="./images/products/athletic-cotton-socks-6-pairs.jpg" alt="socks">
+        </div>
+
+        <div class="product-name limit-text-to-2-lines">
+          Black and Gray Athletic Cotton Socks - 6 Pairs
+        </div>
+
+        <div class="product-rating-container">
+          <img  class="product-rating-stars" src="./images/ratings/rating-45.png" alt="4.5">
+          <div class="product-rating-count link-primary">
+            87
+          </div>
+        </div>
+
+        <div class="product-price">
+          $10.90
+        </div>
+
+        <div class="product-quantity-container">
+          <select>
+            <option selected value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+          </select>
+        </div>
+
+        <div class="product-spacer"></div>
+
+        <div class="added-to-cart">
+          <img src="images/icons/checkmark.png">
+          Added
+        </div>
+
+        <button class="add-to-cart-button button-primary">
+          Add to Cart
+        </button>
+      </div>
+
+      <div class="product-container">
+        <div class="product-image-container">
+          <img class="product-image" src="./images/products/intermediate-composite-basketball.jpg" alt="ball">
+        </div>
+
+        <div class="product-name limit-text-to-2-lines">
+          Intermediate Size Basketball
+        </div>
+
+        <div class="product-rating-container">
+          <img  class="product-rating-stars" src="./images/ratings/rating-40.png" alt="4.0">
+
+          <div class="product-rating-count link-primary">
+            127
+          </div>
+        </div>
+
+        <div class="product-price">
+          $20.95
+        </div>
+
+        <div class="product-quantity-container">
+          <select>
+            <option selected value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+          </select>
+        </div>
+
+        <div class="product-spacer"></div>
+
+        <div class="added-to-cart">
+          <img src="images/icons/checkmark.png">
+          Added
+        </div>
+
+        <button class="add-to-cart-button button-primary">
+          Add to Cart
+        </button>
+      </div>
+
+      <div class="product-container">
+        <div class="product-image-container">
+          <img class="product-image" src="./images/products/adults-plain-cotton-tshirt-2-pack-teal.jpg" alt="">
+        </div>
+
+        <div class="product-name limit-text-to-2-lines">
+          Adults Plain Cotton T-Shirt - 2 Pack
+        </div>
+
+        <div class="product-rating-container">
+          <img  class="product-rating-stars" src="./images/ratings/rating-45.png" alt="4.5">
+          <div class="product-rating-count link-primary">
+            56
+          </div>
+        </div>
+
+        <div class="product-price">
+          $7.99
+        </div>
+
+        <div class="product-quantity-container">
+          <select>
+            <option selected value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+          </select>
+        </div>
+
+        <div class="product-spacer"></div>
+
+        <div class="added-to-cart">
+          <img src="images/icons/checkmark.png">
+          Added
+        </div>
+
+        <button class="add-to-cart-button button-primary">
+          Add to Cart
+        </button>
+      </div> -->
+
+    </div>
+  </div>
+  <script type="module" src="./scripts/amazon.js"></script>
+</body>
+</html>
